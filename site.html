@@ -18,13 +18,27 @@
         }
         h3 {
             background-color: gray;
-          
-            
+            padding: 20px;
+            margin: 5px;
+            color: white;
+                
         }
-        img{
-            margin: 10px;
-           
-        }
+        
+        figure.legenda figcaption {
+                opacity: 0;
+                position:absolute;
+                right: 0px;
+                background-color: rgba(0, 0, 0,.4);
+                color:white;
+                width: 10%;
+                height: 10%;
+                padding: 10px;
+                box-sizing: border-box;
+                transition: opacity 1s;
+        }       
+        figure.legenda:hover figcaption{
+                opacity: 1;
+            }
        
        
     </style>
@@ -39,8 +53,13 @@
         <h2 style="color: white">Quem Ele é ?</h2>
         <hr/>
         <div >
+            <figure class="legenda">
          <img align ="right" src="jensen2.jpg" height="200" width="200"/>
-         
+            <figcaption>
+                <p>Jensen Ackles</p>
+            </figcaption>
+
+            </figure>
         </div>
         
     </div>

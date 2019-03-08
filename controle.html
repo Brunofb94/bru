@@ -3,14 +3,67 @@
     <head>
         <title>Controle pessoal financeiro</title>
         <meta charset="UTF-8"/>
-
+           <style>
+                #primeiradiv{
+                background-color: blue;
+                padding: 10px;
+                    
+            }
+            #first{
+                color: white;
+                text-align: center;               
+                font-style: italic;
+            }
+            h2{
+                color: white;
+                background-color:black;
+                padding: 10px;
+                text-align: center;
+                font-style: oblique;
+            }
+            #secondiv{
+                text-align: center;
+            }
+           #secondiv table{
+             text-align: justify;
+             margin-right: auto;
+             margin-left: auto;
+             background-color: white;
+           }
+           #secondiv table:hover{
+               background-color: black;
+               color:white;
+               
+           }
+           #fordiv {
+               text-align: center;
+               background-color: black;
+               color: white;
+               font-size: 20px;
+            
+           }
+           #mec input{
+               text-align: center;
+               padding: 0px;
+               background-color: blue;
+               color: white;
+               width: 80px;
+               height: 50px;
+               
+           }
+            body{
+                background-color: red;
+            }
+           
+           
+           </style>
         <body>
-            <div>
-                <h1>Controle Pessoal Financeiro</h1>
+            <div id="primeiradiv">
+                <h1 id="first">Controle Pessoal Financeiro</h1>
             </div>
             <h2>Registros</h2>
-            <div>
-                <table border="3" >
+            <div id="secondiv">
+                <table border="3"  >
                         
             
                         <tr>
@@ -62,14 +115,16 @@
                 </table>
                 <hr/>
                 <h1>Adicionar nova receita</h1>
-                <div>
+                <div id="fordiv"> 
                     Descrição: <input type="text" name="Descrição" placeholder="Digite a descrição">
                     Categoria: <input type="text" name="Categoria" placeholder="informe a categoria">
-                    Data: <input type="datetime-local" name="Data" >
-                    valor R$: <input type="text" name="valor" placeholder="informe o valor">
+                    Data:      <input type="datetime-local" name="Data" >
+                    valor R$:  <input type="text" name="valor" placeholder="informe o valor">
 
                 </div>
+                <div id="mec">
                  <input  type="submit"  name="Adicionar" value="Adicionar" >
+                </div>
             </div>
         </body>
     </head>
